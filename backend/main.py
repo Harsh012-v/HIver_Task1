@@ -49,3 +49,7 @@ def predict_tag(request: PredictionRequest):
     
     result = classifier.predict(request.email_text, request.customer_id, valid_tags)
     return result
+
+@app.get("/")
+def health_check():
+    return {"status": "ok", "message": "Backend is running. Please access the frontend."}
