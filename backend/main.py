@@ -29,19 +29,19 @@ class PredictionResponse(BaseModel):
     source: str
     explanation: Optional[str] = None
 
-@app.get("/")
+@app.get("/api")
 def read_root():
     return {"message": "Email Tagging API is running"}
 
-@app.get("/customers")
+@app.get("/api/customers")
 def get_customers():
     return {"customers": data_manager.get_customers()}
 
-@app.get("/emails")
+@app.get("/api/emails")
 def get_emails(customer_id: Optional[str] = None):
     return {"emails": data_manager.get_emails(customer_id)}
 
-@app.post("/predict", response_model=PredictionResponse)
+@app.post("/api/predict", response_model=PredictionResponse)
 def predict_tag(request: PredictionRequest):
     valid_tags = data_manager.get_valid_tags(request.customer_id)
     if not valid_tags:
