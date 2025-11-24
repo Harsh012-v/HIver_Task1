@@ -1,0 +1,44 @@
+[
+  {
+    "id": "email_1",
+    "customer_id": "TechCorp",
+    "subject": "App crashing on login",
+    "body": "Hi, whenever I try to login with my google account, the app crashes immediately. Please fix.",
+    "ground_truth_tag": "Bug"
+  },
+  {
+    "id": "email_2",
+    "customer_id": "TechCorp",
+    "subject": "Feature request: Dark mode",
+    "body": "I love your app but my eyes hurt at night. Can you add a dark mode?",
+    "ground_truth_tag": "Feature Request"
+  },
+  {
+    "id": "email_3",
+    "customer_id": "TechCorp",
+    "subject": "Invoice for March",
+    "body": "I haven't received the invoice for this month. Can you send it?",
+    "ground_truth_tag": "Billing"
+  },
+  {
+    "id": "email_4",
+    "customer_id": "FashionStore",
+    "subject": "Wrong size received",
+    "body": "I ordered a size M but got an L. How can I exchange it?",
+    "ground_truth_tag": "Size Issue"
+  },
+  {
+    "id": "email_5",
+    "customer_id": "FashionStore",
+    "subject": "Return policy inquiry",
+    "body": "What is your return policy for sale items?",
+    "ground_truth_tag": "Return"
+  },
+  {
+    "id": "email_6",
+    "customer_id": "FashionStore",
+    "subject": "Where is my order?",
+    "body": "It's been 2 weeks and I haven't received my package yet.",
+    "ground_truth_tag": "Shipping"
+  }
+]

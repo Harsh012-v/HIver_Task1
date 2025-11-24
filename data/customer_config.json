@@ -1,0 +1,14 @@
+{
+    "TechCorp": [
+        "Bug",
+        "Feature Request",
+        "Billing",
+        "Account Issue"
+    ],
+    "FashionStore": [
+        "Return",
+        "Shipping",
+        "Size Issue",
+        "Product Inquiry"
+    ]
+}
